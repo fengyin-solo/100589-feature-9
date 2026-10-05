@@ -35,3 +35,17 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+.batch-panel, .pending-panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+.batch-panel h3, .pending-panel h3 { margin: 0 0 10px; font-size: 14px; }
+.batch-form { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; margin-bottom: 10px; }
+.cover-checks { display: flex; flex-wrap: wrap; gap: 10px; }
+.cover-checks label { display: flex; align-items: center; gap: 4px; font-size: 13px; }
+.cover-checks em { font-style: normal; color: #b42318; font-size: 12px; }
+.deep-note { margin: 10px 0 6px; font-size: 13px; color: #b54708; }
+.batch-result { margin-top: 10px; border-top: 1px dashed var(--border); padding-top: 10px; font-size: 13px; }
+.batch-result p { margin: 4px 0; }
+.batch-result ul { margin: 4px 0; padding-left: 18px; }
+.result-ok { color: #067647; }
+.result-fail { color: #b42318; }
+.result-deep { color: #b54708; }
+.pending-panel { margin-top: 12px; }
