@@ -40,6 +40,13 @@ export function listRows(key: string): EntryRow[] {
   return allRows()[key] ?? []
 }
 
+// 成批提交等并发敏感场景用：丢掉内存缓存直读 localStorage，
+// 让另一个标签页先提交的批次能被这里立刻看到，先到的那批才算数。
+export function listRowsFresh(key: string): EntryRow[] {
+  cache = readStorage()
+  return cache[key] ?? []
+}
+
 export function saveRows(key: string, rows: EntryRow[]): void {
   const next = { ...allRows(), [key]: rows }
   cache = next
